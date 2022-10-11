@@ -6,6 +6,112 @@
 
     </head>
     <body>
+        <div id="body">
+            <div class="container-50">
+                <h2 id="motto">Calculate House Volume</h2>
+            </div>
+            
+           <br/>
+            <hr>
+            <div id="bedtimeForm">
+                <h3>Calculate House Volume</h3><br>
+                <label for="width">Width</label><br>
+                <input type="number" id="width" name="width"><br>
 
+                <label for="height">Height</label><br>
+                <input type="number" id="height" name="height"><br>
+
+                <label for="depth">Depth</label><br>
+                <input type="number" id="depth" name="depth"><br>
+
+                <label for="sweep">Sweep</label><br>
+                <input type="number" id="sweep" name="sweep"><br>
+    
+                
+    
+                <input id="calculateVolume" type="submit" value="Submit" onClick="doInputOutput()">
+                <div id="formResults">
+                </div>
+            </div>
+        </div>
     </body>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .container, .container-100, .container-75, .container-50, .container-33 {
+            display: flex;
+            margin: auto;
+        }
+        .container-100 {
+            width: 100%;
+        }
+        .container-75 {
+            width: 75%;
+        }
+        .container-50 {
+            width: 50%;
+        }
+        .container-33 {
+            width: 33%;
+        }
+        body {
+            margin: 0;
+        }
+        #body {
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: darkgreen;
+            font-size: 50px;
+        }
+        h3 {
+            margin: auto;
+            color: lightblue;
+        }
+        #motto {
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+        }
+        #logo {
+            margin: auto;
+            width: 30%;
+        }
+        hr {
+            color: lightseagreen;
+            width: 75%;
+        }
+        #bedtimeForm label, #bedtimeForm input, #bedtimeForm h3 {
+            margin: 10px;
+            color: white;
+        }
+        #bedtimeForm input {
+            color: black !important;
+        }
+        #submitAge {
+            color: black !important;
+        }
+        #bedtimeForm {
+            padding: 5px;
+            background-color: lightseagreen;
+            border-radius: 5px;
+            margin: auto;
+            border-radius: 5px;
+            margin: auto;
+            padding : 10px;
+            width: 35%;
+        }
+        #formResults {
+            color: white;
+        }
+        footer {
+            background-color: lightseagreen;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </html>
